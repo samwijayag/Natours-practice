@@ -5,19 +5,26 @@ Medium green: #55c57a
 Dark green: #28b485
 */
 
-*{
+*,
+*::after,
+*::before{
 	margin: 0;color
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 63.5%;
 }
 
 body{
 	font-family: "Lato", sans-serif;#777;
 	font-weight: 400;
-	font-size: 16px;
 	line-height: 1.7;
 	color: #777;
-	padding: 30px;
+	padding: 3rem;
+
+	box-sizing: border-box;
 }
 
 .header{
@@ -29,17 +36,17 @@ body{
 	clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
 }
 
-.logo-box{
+.header__logo-box{
 	position: absolute;
-	top: 40px;
-	left: 40px;
+	top: 4rem;
+	left: 4rem;
 }
 
-.logo{
-	height: 35px;
+.header__logo{
+	height: 3.5rem;
 }
 
-.text-box{
+.header__text-box{
 	position: absolute;
 	top: 45%;
 	left: 50%;
@@ -51,28 +58,28 @@ body{
 	color: #fff;
 	text-transform: uppercase;
 	backface-visibility: hidden;
-	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
 }
 
-.heading-primary-main{
+.heading-primary--main{
 	display: block;
-	font-size: 50px;
+	font-size: 5rem;
 	font-weight: 400;
-	letter-spacing: 35px;
+	letter-spacing: 3.5rem;
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
 	display: block;
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: 400;
-	letter-spacing: 17.4px;
+	letter-spacing: 1.7rem;
 }
 
 .btn:link,
 .btn:visited {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 15px 40px;
+	padding: 1.5rem 4rem;
 	display: inline-block;
 	border-radius: 100px;
 	transition: all .2s;
@@ -80,15 +87,15 @@ body{
 
 .btn:hover{
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0,0,0,.2)
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.2)
 }
 
 .btn:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0,0,0,.2)
+	box-shadow: 0 5px 1rem rgba(0,0,0,.2)
 }
 
-.btn-white{
+.btn--white{
 	background-color: #fff;
 	color: #777;
 }
